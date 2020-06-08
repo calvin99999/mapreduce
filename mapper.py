@@ -39,9 +39,9 @@ for line in sys.stdin:
     else:
 	raise Exception('Not 6 elements')
 		
-
+    if category in ['Computers','Cameras','Video Games']:
     # Write the key-value combination to standard output (stdout)
     # Key is the payment, value is the sales     
     # With a tab (\t) between key and value
     # New line \n means new record
-    sys.stdout.write("{0}\t{1}\n".format(category, sales))
+	sys.stdout.write("{0}\t{1}\n".format(category, sales))
